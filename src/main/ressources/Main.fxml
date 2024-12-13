@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainViewController">
+    <!-- Set the AnchorPane to fill the scene -->
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50">
+        <Label text="Ajouter un nouveau Membre" />
+    </HBox>
+
+    <!-- Fields inside HBox with AnchorPane alignment -->
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" layoutY="80">
+        <TextField fx:id="nomField" promptText="Nom du membre" />
+    </HBox>
+
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" layoutY="120">
+        <TextField fx:id="prenomField" promptText="Prénom du membre" />
+    </HBox>
+
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" layoutY="160">
+        <TextField fx:id="emailField" promptText="Email du membre" />
+    </HBox>
+
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" layoutY="200">
+        <TextField fx:id="phoneField" promptText="Téléphone du membre" />
+    </HBox>
+
+    <!-- Button at the bottom of the form -->
+    <HBox alignment="CENTER" prefWidth="400.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" layoutY="240">
+        <Button text="Insérer" fx:id="insertButton" onAction="#ButtonClicked" />
+    </HBox>
+
+</AnchorPane>
